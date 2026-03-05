@@ -1,0 +1,17 @@
+# Core
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# HTTP client (async calls to Go backend)
+httpx>=0.27.0
+
+# ML
+torch>=2.3.0          # CPU wheel; swap for torch --index-url for CUDA builds
+# torchvision>=0.18.0   # uncomment if using image inputs
+
+# Dev / testing
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+httpx                  # already above; also used by TestClient
